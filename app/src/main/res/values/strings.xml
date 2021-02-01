@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ModernArt</string>
+    <string name="dialog_message">do you want more information about MOMA and modern art </string>
+    <string name="learn_more">click view to learn more</string>
+</resources>

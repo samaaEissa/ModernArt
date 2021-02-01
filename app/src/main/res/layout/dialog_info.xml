@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:paddingBottom="12dp"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/dialog_message"
+        android:id="@+id/moma_dialogue_message"
+        android:layout_alignParentLeft="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:gravity="center"
+        android:text="@string/learn_more"
+        android:id="@+id/moma_learn_more_message"
+        android:layout_alignParentLeft="true"
+        android:focusableInTouchMode="true" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/view_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="view MOMA"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/close_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Not Now"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="95"
+    android:orientation="horizontal">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/left_parent"
+        android:layout_width="171dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="11dp"
+
+        android:background="#0000"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/left_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="#FFFF" />
+
+        <TextView
+            android:id="@+id/left_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="#00BCD4" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/right_parent"
+        android:layout_width="364dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:background="#0000"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="28dp">
+
+        <TextView
+            android:id="@+id/right_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="#4CAF50" />
+
+        <TextView
+            android:id="@+id/right_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="#9C27B0" />
+
+        <TextView
+            android:id="@+id/right_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="#E91E63" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat></androidx.appcompat.widget.LinearLayoutCompat>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="725dp"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
